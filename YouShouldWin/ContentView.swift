@@ -11,13 +11,12 @@ import SwiftUI
 struct ContentView: View {
     
     var allMoves = ["👊", "✋", "✌️"]
-    @State private var selectedMove = ""
-    
+ 
     @State private var appMove = Int.random(in: 0...2)
     @State private var shouldWin = Bool.random()
     @State private var totalScore = 0
     @State private var questionNumber = 1
-    @State private var scoreTitle = "Correct!"
+    @State private var scoreTitle = ""
     @State private var showingScore = false
     @State private var showResult = false
     @State private var appColor = [Color.white, Color.gray]
